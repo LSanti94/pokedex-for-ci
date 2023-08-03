@@ -1,15 +1,15 @@
-name: Say hello
+name: Say hello # Nombre del WOrkflows
 
-on:
-  push:
-    branches:
+on: # Activar un workflow
+  push: # Evento push
+    branches: # Ramas en este caso main
       - main
 
-jobs:
-  hello_world:
-    runs-on: ubuntu-18.04
-    steps:
-      - name: Echo the message
+jobs: # Trabajos que va a realizar
+  hello_world: # Nombre del trabajo que va a realizar
+    runs-on: ubuntu-18.04 # En que S.O va a funcionar
+    steps: # Pasos que va a seguir
+      - name: Echo the message # Nombre a los pasos que va a seguir
         run: |
           echo "Hola midu!"
       - name: Dime la fecha
